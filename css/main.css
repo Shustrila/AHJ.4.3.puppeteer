@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card-validator {
+    padding: 40px 30px;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 2px #dddddd;
+}
+
+.card-validator__systems {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.card-validator__systems-item {
+    flex: 1;
+    list-style: none;
+    text-align: center;
+    opacity: .3;
+    transition: 0.3s;
+}
+.card-validator__systems-item--active {
+    opacity: 1;
+}
+.card-validator__systems-img {
+    width: 35px;
+}
+.card-validator__group-input {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.card-validator__label {
+    flex-grow: 1;
+    padding-right: 30px;
+    font-size: 18px;
+}
+.card-validator__input {
+    width: 100%;
+    padding: 6px 12px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+.card-validator__submit {
+    color: #fff;
+    padding: 6px 12px;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.card-validator__submit:hover {
+    background-color: #449d44;
+    border-color: #398439;
+}
+.card-validator__message {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.card-validator__error {
+    color: red;
+}
+.card-validator__valid {
+    color: green;
+}
+
